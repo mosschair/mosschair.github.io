@@ -1,5 +1,4 @@
 import sys
-sys.path.insert(0, "/home/mosschair/navigation/nav-venv/lib/python3.6/site-packages")
 import os
 import time
 import threading
