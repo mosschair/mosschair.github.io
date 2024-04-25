@@ -1,7 +1,8 @@
 # mosschair.github.io
 
-There is a small fraction of the world in need of smart wheelchairs, and among them, there is a great range of functionality necessary. While a paraplegic may only want assistive steering and GPS, a quadriplegic may need an assistive robotic arm to help with their daily lives.  As any product that sufficiently caters to a certain disability would appeal to only a fraction of the already small target demographic, it is hard for companies to efficiently bring smart features to market. Our proposed solution provides open source, modular designs, in turn enabling greater accessibility and variety to the smart features wheelchair users need/desire.
+MOSSChair is dedicated to creating smart modules that can be added to a manual wheelchair so that users can make a customized wheelchair based on the wheelchair user's unique needs. So far, we have created the following modules that are controlled through code found in the code folder under our main branch. This code is put onto an NVIDIA Jetson Nano and mounted onto a manual wheelchair. 
 
-Use our user's manual to get started on your own MOSSChair!
-
-Note: Our software and hardware reports, along with other information, can be found in the wiki section.
+## Our modules
+1. Motorization: we have three different motorization control modes, including key control (from a laptop), voice control, and a joystick.
+2. Object Detection: through the Jetson Nano and connected camera, objects are able to be detected by the wheelchair.
+3. Robotic Arm: a 3D printed arm has been equipped with servo motors in the fingers and wrist area to allow for precise movement. This arm has high torque and is capable of picking up small items.
