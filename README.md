@@ -34,7 +34,7 @@ https://inmoov.fr/bicep/
    https://hello-robot.com/stretch-3-product
    https://github.com/hello-robot
    
-   There is also a new version of the inmoov hand that functions using springs and is better, but I have not looked into it. I do think it is worth checking out though as you may end up deciding that your arm and end effector will be a mix of all the various models you find, the link is below.
+   There is also a new version of the inmoov hand that functions using springs and is better, but I have not looked into it. I do think it is worth checking out though as you may end up deciding that your arm and end effector will be a mix of all the various models you find, the link is the following:
    https://inmoov.fr/inmoov-hand/
 
 ## Things to Look Out For
