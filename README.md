@@ -15,7 +15,29 @@ All in all, with the combination of sensors, robust motors and the powerful Jets
 ## Our Modules Thus Far
 1. Motorization: we have three different motorization control modes, including key control (from a laptop), voice control, and a joystick.
 2. Object Detection: through the Jetson Nano and connected camera, objects can be detected by the wheelchair.
-3. Robotic Arm: a 3D-printed arm has been equipped with servo motors in the fingers and wrist area to allow for precise movement. This arm has high torque and is capable of picking up small items.
+3. Robotic Arm: a 3D-printed arm has been equipped with servo motors in the fingers and wrist area to allow for precise movement. This arm has high torque and is capable of picking up small items. 
+
+The current state of the project is having a functional hand that can articulate all fingers and rotates the wrist. A big problem is going past that, ie past an elbow, to the shoulder. The reason for this is that the torque needed becomes pretty large and requires the construction of a gearbox to allow for a motor to put out these torques. But then you need a drive shaft running through the arm and a system of gears at the base of the elbow and shoulder that are part of the physical arm where the turn will happen. It becomes very complicated and it is not likely something that can be 3D printed unless perhaps you can find a printer with a thick extrusion and use a strong material. Anyway, it would be easier to use the pulley system that the current arm uses, the parts for which can be found below in the hardware section, and the guides here:
+
+https://inmoov.fr/hand-and-forarm/
+https://inmoov.fr/lining-and-tighting-the-tendons/
+https://inmoov.fr/bicep/
+
+We would, however, not recommend using this same design. This is because the project aims to be open source and accessible to people, and while this is possible with the current model, it is overly artistic and somewhat impractical. There are too many parts that are honestly too small and it requires a lot of post machining that makes the project less attainable for most people. A big change I would make is changing the entire end effector (the hand) into one that has just two fingers, or 3 at most, which are aligned as a claw or pincer. I would also suggest turning the body of the arm into either a rectangular prism or cylinder which has a slight taper towards the end, as it is much easier to print and doesn’t have a ‘weaker’ side in terms of load bearing.
+
+We would recommend the use of the wrist as it currently exists however, as it functions extremely well and if not limited by the degrees available to the motor, could rotate a couple times over. The pulley system, as mentioned before, also works well and is only limited by the strength of your ‘tendon,’ but it is easy to just buy something stronger if you need. It can easily be incorporated into a claw-like end effector.
+
+As we said before, the elbow and shoulder joints are difficult to manage as they require a lot of torque which can become expensive, and as we stated earlier, the goal of this project is accessibility. As you will find when you undoubtedly Google “wheelchair robotic arm,” or the such, the arms that attach to wheelchairs and function as an appendage with moving joints and such costs between $35,000 to $50,000. A lot of this is the systems enabling the arm to move in the first place and enabling it to hold its own weight as well as that of an object to pick up. If you are determined or ambitious enough to try that anyway, I would suggest looking at the “VESA Mount” for a good starting point on having an arm that can be moved and be able to maintain that position, even with an added weight. You might need to scale up the mount, but for a small prototype or simply to understand the mechanisms behind how it works, we think it is a very good idea, and it costs a much cheaper $200ish, depending on model. You then would just need to modify it to be able to remotely force movement.
+
+Another avenue we would advise on is forgoing the need for a normal “elbow” or “shoulder” entirely and strapping the end effector to a platform of some sort which can itself be lowered or raised. This adjustable platform would then be mounted to a base that itself could move about remotely. This has the benefit of not requiring any heavy and expensive high-torque motors and is very structurally stable. Additionally, an arm that can move independently of the wheelchair solves certain issues such as not having enough reach to grab something, and doing things like holding a door open, while the wheelchair user goes through it before then going through it and letting it close. This is difficult to accomplish when the arm is attached to the wheelchair, and you must hold and open the door, while maneuvering the wheelchair the whole time, and then keep it open while the wheelchair is going through it. A good example of such an arm would be the “Stretch 3 Robotic Arm,” by Hello Robot. While also expensive at some $25,000, it is much cheaper than the ‘full’ arms, while also being a stand-alone attachment. On top of that, the website also has the code for the arm free and open source, the link to the website and their GitHub is below. They put a camera on theirs too which is a nice addition that’s easily doable, and can likely have the object detection from other parts of this project easily integrated into it.
+
+https://hello-robot.com/stretch-3-product
+https://github.com/hello-robot
+
+There is also a new version of the inmoov hand that functions using springs and is better, but I have not looked into it. I do think it is worth checking out though as you may end up deciding that your arm and end effector will be a mix of all the various models you find, the link is below.
+
+https://inmoov.fr/inmoov-hand/
+
 
 
 ## Future Recommendations
